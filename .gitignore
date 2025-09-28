@@ -2,3 +2,14 @@
 .Rhistory
 .RData
 .Ruserdata
+.DS_Store
+.Rproj
+.Rbuildignore
+inst/doc
+
+src/*.o
+src/*.so
+
+*.dll
+*.dylib
+docs
