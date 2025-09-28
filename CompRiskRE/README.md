@@ -24,9 +24,30 @@ devtools::install_github("UM-KevinHe/CompRiskRE")
 
 ```
 #Use CompRiskRE estimate
-
+eta <- generate_eta(method = "exponential", n = 30, max_eta = 30)
+CompRiskRE_FT(
+  beta_cor = 0.9,
+  eta = eta,
+  N_ext = 5000,
+  N_loc = 2000,
+  N_val = 200,
+  N_test = 5000,
+  nCause = 2,
+  mu = 1,
+  sigma = 0.05,
+  seed = 2024
+)
 ```
-
+- `beta_cor`: numeric correlation level between external and local models.
+- `eta`: numeric vector of Relative Entropy regularization parameters.  
+- `N_ext`: sample size for external data (default: 5000).  
+- `N_loc`: sample size for local data (default: 2000).  
+- `N_val`: sample size for validation data (default: 200).  
+- `N_test`: sample size for test data (default: 5000).  
+- `nCause`: number of competing causes (default: 2).  
+- `mu`: mean of covariates (default: 1).  
+- `sigma`: standard deviation of covariates (default: 0.05).  
+- `seed`: random seed for reproducibility.  
   
 ## Simulation example
 

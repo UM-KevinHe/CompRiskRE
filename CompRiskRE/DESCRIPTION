@@ -1,0 +1,26 @@
+Package: CompRiskRE
+Type: Package
+Title: Relative Entropy Integration for Competing Risks Models
+Version: 0.0.1
+Date: 2025-09-27
+Authors@R: c(
+    person("Yubo", "Shao", role = c("aut", "cre"), email = "ybshao@umich.edu"),
+    person("Qinmengge", "Li", role = c("aut"), email = "liqinmg@umich.edu")
+  )
+Description: Provides functions for discrete-time competing risks modeling with 
+    Relative Entropy (RE) integration. The package supports both composite failure 
+    time (CFT) prior models and cause-specific prior models.
+License: GPL (>= 2)
+Depends: 
+    R (>= 4.0)
+Imports: 
+    nnet,
+    xgboost,
+    mvtnorm,
+    fastDummies,
+    Rcpp (>= 1.1.0)
+LinkingTo: 
+    Rcpp,
+    RcppArmadillo
+RoxygenNote: 7.3.2
+Encoding: UTF-8
