@@ -51,16 +51,12 @@ A list with two components:
 \description{
 This function implements the Relative Entropy (RE) framework for discrete-time competing risk models 
 with the prior model is a competing risk prior model.
-\itemize{
-  \item Simulate external, local, validation, and test data.
-  \item Fit a prior competing risks model, a local model, and a joint model.
-  \item Apply Relative Entropy–based integration algorithm with direct multinomial updates.
-  \item Evaluate predictive performance on validation and test datasets.
-}
 }
 \examples{
+\dontrun{
 eta <- generate_eta(method = "exponential", n = 30, max_eta = 30)
 res <- CompRiskRE_CP(beta_cor = 0.9, eta = eta, seed = 2024)
-names(res$metrics)
+res$metrics
+}
 
 }

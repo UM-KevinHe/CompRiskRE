@@ -16,7 +16,6 @@ TBD
 
 ```
 #Install the package, need to install the devtools packages:
-install.packages("CompRiskRE")
 devtools::install_github("UM-KevinHe/CompRiskRE")
 ```
 
@@ -48,6 +47,4 @@ CompRiskRE_FT(
 - `mu`: mean of covariates (default: 1).  
 - `sigma`: standard deviation of covariates (default: 0.05).  
 - `seed`: random seed for reproducibility.  
-  
-## Simulation example
 

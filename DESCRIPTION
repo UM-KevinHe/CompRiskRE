@@ -1,6 +1,8 @@
 Package: CompRiskRE
 Type: Package
 Title: Relative Entropy Integration for Competing Risks Models
+URL: https://github.com/UM-KevinHe/CompRiskRE,
+    https://umkevinhe.github.io/CompRiskRE
 Version: 0.0.1
 Date: 2025-09-27
 Authors@R: c(

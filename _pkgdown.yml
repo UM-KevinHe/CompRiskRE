@@ -1,4 +1,45 @@
-url: ~
+url: https://umkevinhe.github.io/CompRiskRE
+
 template:
   bootstrap: 5
+params:
+  bootswatch: lumen
+mathjax: true
 
+home:
+  sidebar:
+    structure: [links, license, authors]
+
+authors:
+  auto: true
+citation: false
+
+navbar:
+  structure:
+    left: [reference]
+    right: [home]
+
+reference:
+  - title: "Core Models"
+    desc: >
+      Functions for fitting competing risks models with Relative Entropy integration.
+    contents:
+      - CompRiskRE_FT
+      - CompRiskRE_CP
+      - CompRiskRE_XGBoost_FT
+      - CompRiskRE_XGBoost_CP
+
+  - title: "Simulation & Data Preparation"
+    desc: >
+      Functions for simulating and reshaping.
+    contents:
+      - simulate_CPFT
+      - prob_n
+      - dataLong
+
+  - title: "Utilities"
+    desc: >
+      Helper functions for evaluation.
+    contents:
+      - CindexCR
+      - generate_eta

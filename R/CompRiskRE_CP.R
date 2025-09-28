@@ -2,12 +2,6 @@
 #'
 #' This function implements the Relative Entropy (RE) framework for discrete-time competing risk models 
 #' with the prior model is a competing risk prior model.
-#' \itemize{
-#'   \item Simulate external, local, validation, and test data.
-#'   \item Fit a prior competing risks model, a local model, and a joint model.
-#'   \item Apply Relative Entropy–based integration algorithm with direct multinomial updates.
-#'   \item Evaluate predictive performance on validation and test datasets.
-#' }
 #'
 #' @param beta_cor Numeric correlation level between external and local models.
 #'   Must be one of \code{1.0, 0.9, 0.7, 0.5, 0.4, 0.3, 0.1, 0}.
@@ -30,9 +24,11 @@
 #' }
 #'
 #' @examples
+#' \dontrun{
 #' eta <- generate_eta(method = "exponential", n = 30, max_eta = 30)
 #' res <- CompRiskRE_CP(beta_cor = 0.9, eta = eta, seed = 2024)
-#' names(res$metrics)
+#' res$metrics
+#' }
 #'
 #' @export
 CompRiskRE_CP <- function(beta_cor = 0.9,
