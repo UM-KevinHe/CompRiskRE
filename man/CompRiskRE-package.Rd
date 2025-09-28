@@ -23,7 +23,7 @@ You can install the package from GitHub:
 Useful links:
 \itemize{
   \item \url{https://github.com/UM-KevinHe/CompRiskRE}
-  \item \url{https://umkevinhe.github.io/CompRiskRE}
+  \item \url{https://um-kevinhe.github.io/CompRiskRE/}
 }
 
 }

@@ -2,7 +2,7 @@ pandoc: 3.6.3
 pkgdown: 2.1.3
 pkgdown_sha: ~
 articles: {}
-last_built: 2025-09-28T14:54Z
+last_built: 2025-09-28T15:06Z
 urls:
-  reference: https://umkevinhe.github.io/CompRiskRE/reference
-  article: https://umkevinhe.github.io/CompRiskRE/articles
+  reference: https://um-kevinhe.github.io/CompRiskRE/reference
+  article: https://um-kevinhe.github.io/CompRiskRE/articles
